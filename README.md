@@ -5,6 +5,10 @@
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![VS Code](https://img.shields.io/badge/VS%20Code-1.85%2B-blueviolet)
 
+<p align="center">
+  <img src="assets/screenshot.png" alt="BMAD Mission Control Sidebar" width="350">
+</p>
+
 ---
 
 ## ✨ Features
