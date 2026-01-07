@@ -1,0 +1,55 @@
+{
+  "name": "bmad-mission-control",
+  "displayName": "BMAD Mission Control",
+  "description": "Visual sidebar for BMAD workflow management - execute workflows with one click",
+  "version": "0.1.0",
+  "publisher": "bmad",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:bmad.sidebar"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "bmad-container",
+          "title": "BMAD Mission Control",
+          "icon": "resources/bmad-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "bmad-container": [
+        {
+          "type": "webview",
+          "id": "bmad.sidebar",
+          "name": ""
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
